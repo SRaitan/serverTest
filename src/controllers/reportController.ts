@@ -65,7 +65,6 @@ export const getReport = async (req: Request, res: Response) => {
 
         res.status(200).json(report);
     } catch (error) {
-        // @ts-ignore
         throw new Error(error.message);
     }
 }
